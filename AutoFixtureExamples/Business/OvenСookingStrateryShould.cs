@@ -18,7 +18,7 @@ namespace AutoFixtureExamples.Business
         }
 
         [Test]
-        public async Task CookPizzaWithCrust()
+        public async Task CookPizzaWithCrustAsync()
         {
             var pizza = _fixture.Create<Pizza>();
 

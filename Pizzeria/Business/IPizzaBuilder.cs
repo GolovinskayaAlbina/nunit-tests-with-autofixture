@@ -53,10 +53,10 @@ namespace Pizzeria.Business
         }
     }
 
-    class ThreeCheesesBuilder : IPizzaBuilder
+    class ThreeCheesesPizzaBuilder : IPizzaBuilder
     {
         private Pizza _pizza;
-        public ThreeCheesesBuilder()
+        public ThreeCheesesPizzaBuilder()
         {
             var now = DateTime.UtcNow;
             _pizza = new Pizza
@@ -101,10 +101,10 @@ namespace Pizzeria.Business
         }
     }
 
-    class HawaiianBuilder : IPizzaBuilder
+    class HawaiianPizzaBuilder : IPizzaBuilder
     {
         private Pizza _pizza;
-        public HawaiianBuilder()
+        public HawaiianPizzaBuilder()
         {
             var now = DateTime.UtcNow;
             _pizza = new Pizza

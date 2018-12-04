@@ -1,5 +1,6 @@
-AutoFixtureExamples/bin/Debug/Castle.Core.dll
 AutoFixtureExamples/bin/
 AutoFixtureExamples/obj/
 Pizzeria/obj/
 Pizzeria/bin/
+.vs/
+packages/

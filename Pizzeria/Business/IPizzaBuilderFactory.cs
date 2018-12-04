@@ -15,13 +15,13 @@ namespace Pizzeria.Business
             switch (name)
             {
                 case PizzaName.Hawaiian:
-                    return new HawaiianBuilder();
+                    return new HawaiianPizzaBuilder();
                 case PizzaName.NeapolitanPizza:
                     return new NeapolitanPizzaBuilder();
                 case PizzaName.ThreeCheeses:
-                    return new ThreeCheesesBuilder();
+                    return new ThreeCheesesPizzaBuilder();
                 default:
-                    throw new ArgumentException($"Pizza {name} is not in menu");
+                    throw new ArgumentException($"Pizza '{name}' is not in menu");
             }
         }
     }
