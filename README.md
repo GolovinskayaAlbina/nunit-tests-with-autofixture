@@ -1,0 +1,1 @@
+# nunit-tests-with-autofixture
