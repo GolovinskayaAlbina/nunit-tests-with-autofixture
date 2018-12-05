@@ -46,6 +46,7 @@
     <Compile Include="Business\IPizzaBuilderDirector.cs" />
     <Compile Include="Business\IPizzaBuilderFactory.cs" />
     <Compile Include="Business\IPizzaСookingStrategy.cs" />
+    <Compile Include="Business\IPizzaСookingStrategyContainer.cs" />
     <Compile Include="Business\IPizzaСookingStrategyFactory.cs" />
     <Compile Include="DTO\Cheese.cs" />
     <Compile Include="DTO\Pizza.cs" />

@@ -77,6 +77,8 @@
     <Compile Include="PizzeriaKitchenShould.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Stubs\CheeseStub.cs" />
+    <Compile Include="Stubs\PizzaStub.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -1,6 +1,6 @@
-﻿using NUnit.Framework;
+﻿using AutoFixtureExamples.Stubs;
+using NUnit.Framework;
 using Pizzeria.Business;
-using Pizzeria.DTO;
 using Ploeh.AutoFixture;
 using System.Threading.Tasks;
 
@@ -20,7 +20,7 @@ namespace AutoFixtureExamples.Business
         [Test]
         public async Task CookPizzaWithCrustAsync()
         {
-            var pizza = _fixture.Create<Pizza>();
+            var pizza = _fixture.Create<PizzaStub>().ToPizza();
 
             var stratery = _fixture.Create<OvenСookingStratery>();
 

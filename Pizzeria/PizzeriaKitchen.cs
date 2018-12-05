@@ -28,8 +28,8 @@ namespace Pizzeria
             var builder = _builderFactory.CreatePizzaBuilder(pizzaName);
             var pizza = _builderDirector.Build(builder);
 
-            var cookingStrategy = GetCookingStrategy();
-            await cookingStrategy.CookAsync(pizza);
+            var strategy = GetCookingStrategy();
+            await strategy.CookAsync(pizza);
 
             OnOrderIsReady(pizza, orderNum);
         }
@@ -41,11 +41,9 @@ namespace Pizzeria
 
         private IPizzaСookingStrategy GetCookingStrategy()
         {
-            if (IsOvenBroken)
-            {
-                return _сookingStrategyFactory.CreateMicrowaveСookingStratery();
-            }
-            return _сookingStrategyFactory.CreateOvenСookingStratery();
+            return IsOvenBroken 
+                ? _сookingStrategyFactory.CreateMicrowaveСookingStratery()
+                : _сookingStrategyFactory.CreateOvenСookingStratery();
         }
     }
 }
